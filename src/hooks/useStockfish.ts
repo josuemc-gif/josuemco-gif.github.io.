@@ -24,7 +24,7 @@ export function useStockfish(elo: number) {
   }, [elo, configure])
 
   useEffect(() => {
-    const worker = new Worker('/stockfish/stockfish-19-lite-single.js')
+    const worker = new Worker(`${import.meta.env.BASE_URL}stockfish/stockfish-19-lite-single.js`)
     workerRef.current = worker
 
     worker.onmessage = (event: MessageEvent) => {
