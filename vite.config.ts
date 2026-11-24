@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/josuemco-gif.github.io/',
+  base: '/josuemco-gif.github.io./',
   plugins: [react(), tailwindcss()],
 })
